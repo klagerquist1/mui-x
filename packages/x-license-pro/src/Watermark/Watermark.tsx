@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { MuiCommercialPackageName, useLicenseVerifier } from '../useLicenseVerifier';
 import { LICENSE_STATUS, LicenseStatus } from '../utils/licenseStatus';
 
@@ -33,22 +32,5 @@ export function Watermark(props: WatermarkProps) {
     return null;
   }
 
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        pointerEvents: 'none',
-        color: '#8282829e',
-        zIndex: 100000,
-        width: '100%',
-        textAlign: 'center',
-        bottom: '50%',
-        right: 0,
-        letterSpacing: 5,
-        fontSize: 24,
-      }}
-    >
-      {getLicenseErrorMessage(licenseStatus.status)}
-    </div>
-  );
+  return;
 }
